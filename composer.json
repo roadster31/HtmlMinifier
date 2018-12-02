@@ -1,0 +1,11 @@
+{
+  "name": "your-vendor/html-minifier-module",
+  "license": "LGPL-3.0-or-later",
+  "type": "thelia-module",
+  "require": {
+    "voku/html-min": "^1.0"
+  },
+  "extra": {
+    "installer-name": "HtmlMinifier"
+  }
+}
