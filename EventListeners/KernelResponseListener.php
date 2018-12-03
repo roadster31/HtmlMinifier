@@ -26,7 +26,10 @@ class KernelResponseListener implements EventSubscriberInterface
 {
     public function minifyOutput(FilterResponseEvent $event)
     {
-        if ($event->getRequest()->getRequestFormat() === 'html') {
+        // Prepare response to get the final Content-Type
+        $event->getResponse()->prepare($event->getRequest());
+
+        if (strstr($event->getResponse()->headers->get('content-type'), 'text/html')) {
             $htmlMin = new HtmlMin();
 
             // Minify HTML content
