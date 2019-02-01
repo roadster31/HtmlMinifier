@@ -8,7 +8,6 @@ class ComposerStaticInitcb92cc7f593e0c9fa9b834241612582c
 {
     public static $files = array (
         'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '848a06382c1c883893a9c9833ae2b551' => __DIR__ . '/..' . '/symfony/polyfill/src/Apcu/bootstrap.php',
         'acf59695ef9115a36483a1d0a770cb98' => __DIR__ . '/..' . '/symfony/polyfill/src/Ctype/bootstrap.php',
         'd075ca29fdd460a76e9d730a9724dc20' => __DIR__ . '/..' . '/symfony/polyfill/src/Php54/bootstrap.php',

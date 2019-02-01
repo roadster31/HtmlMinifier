@@ -21,23 +21,14 @@ final class GitRepository
 {
     private $path;
 
-    /**
-     * @param string $path
-     */
-    public function __construct($path)
+    public function __construct(string $path)
     {
         $this->path = $path;
 
         $this->getUrl();
     }
 
-    /**
-     * @param string $remote
-     * @param string $targetDir
-     *
-     * @return GitRepository
-     */
-    public static function download($remote, $targetDir)
+    public static function download(string $remote, string $targetDir): self
     {
         self::exec('which git', 'The command "git" is not installed.');
 
@@ -104,7 +95,7 @@ final class GitRepository
         exec(sprintf('%s 2>&1', $command), $output, $result);
 
         if (0 !== $result) {
-            throw new RuntimeException(null !== $customErrorMessage ? $customErrorMessage : sprintf('The `%s` command failed.', $command));
+            throw new RuntimeException(null !== $customErrorMessage ? $customErrorMessage : sprintf('The "%s" command failed.', $command));
         }
 
         return $output;

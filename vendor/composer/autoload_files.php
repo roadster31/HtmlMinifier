@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'e40631d46120a9c38ea139981f8dab26' => $vendorDir . '/ircmaxell/password-compat/lib/password.php',
-    '5255c38a0faeba867671b61dfda6d864' => $vendorDir . '/paragonie/random_compat/lib/random.php',
     '848a06382c1c883893a9c9833ae2b551' => $vendorDir . '/symfony/polyfill/src/Apcu/bootstrap.php',
     'acf59695ef9115a36483a1d0a770cb98' => $vendorDir . '/symfony/polyfill/src/Ctype/bootstrap.php',
     'd075ca29fdd460a76e9d730a9724dc20' => $vendorDir . '/symfony/polyfill/src/Php54/bootstrap.php',
